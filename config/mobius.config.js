@@ -6,7 +6,7 @@ export const CSS_CDN_ORIGIN = 'https://fonts.googleapis.cnpmjs.org/'
 const CSP_WHITE_LIST = 'https://*.unpkg.com https://*.jsdelivr.net https://*.cloudflare.com'
 
 const commonTemplate = {
-  title: 'Hello, Mobius Project!',
+  title: 'Hello, Mobius Visualization!',
   'meta-csp':
     `default-src 'self' ${CSP_WHITE_LIST};` +
     ` script-src 'self' 'unsafe-inline' 'unsafe-eval' ${CSP_WHITE_LIST};` +
@@ -28,7 +28,7 @@ const commonTemplate = {
     // `${CSS_CDN_ORIGIN}css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&display=swap`
   ],
   css: [
-    // 'https://cdn.jsdelivr.net/npm/@we-mobius/mobius-ui@latest'
+    // 'https://cdn.jsdelivr.net/npm/@we-mobius/mobius-visualization@latest'
   ],
   scripts: [],
   // generator: https://favicon.io/favicon-converter/
@@ -88,7 +88,7 @@ const commonTemplate = {
               <div class="svg-loading" style="width: 45px; height: 45px;"></div>
             </p>
             <p>
-              Mobius Template Project!
+              Mobius Visualization!
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { makeInstantComponent, makeMiddleColAdaptiveLayoutE } from 'MobiusGUI'
 import { dockRD } from 'Interfaces/dock'
 import { homeRD } from 'Interfaces/pages/home/home'
 
-import { appNameRD } from 'FreeServices/app-route'
+import { appNameRD } from 'Interfaces/services/app-route'
 
 export const appTemplateRD = makeInstantComponent(
   [appNameRD, dockRD, homeRD],

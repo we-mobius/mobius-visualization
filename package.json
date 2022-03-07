@@ -1,7 +1,7 @@
 {
-  "name": "web-template",
+  "name": "@we-mobius/mobius-visualization",
   "version": "0.1.0",
-  "description": "📋 Template for mobius flavor web project.",
+  "description": "📋 Mobius Visualization.",
   "type": "module",
   "typings": "./typings/main.d.ts",
   "types": "./typings/main.d.ts",
@@ -103,7 +103,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/we-mobius/web-template.git"
+    "url": "git+https://github.com/we-mobius/mobius-visualization.git"
   },
   "author": {
     "name": "kongxiangyan",
@@ -112,9 +112,9 @@
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/we-mobius/web-template/issues"
+    "url": "https://github.com/we-mobius/mobius-visualization/issues"
   },
-  "homepage": "https://github.com/we-mobius/web-template#readme",
+  "homepage": "https://github.com/we-mobius/mobius-visualization#readme",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.10.5",

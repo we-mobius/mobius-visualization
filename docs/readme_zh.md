@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
   <a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="Commitizen friendly"></a>
-  <a href="https://www.jsdelivr.com/package/gh/we-mobius/mobius-ui"><img src="https://data.jsdelivr.com/v1/package/gh/we-mobius/mobius-ui/badge" alt="Distributed on jsDelivr"></a>
+  <a href="https://www.jsdelivr.com/package/gh/we-mobius/mobius-visualization"><img src="https://data.jsdelivr.com/v1/package/gh/we-mobius/mobius-visualization/badge" alt="Distributed on jsDelivr"></a>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
   <span style="font-weight: bold; color: hsla(96, 100%, 50%, 100%);">📜 中文文档</span>
 </p>
 
-<h1 align="center">项目名称</h1>
+<h1 align="center">Mobius Visualization</h1>
 
 🎨 一句话介绍项目。
 

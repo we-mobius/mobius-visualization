@@ -1,7 +1,7 @@
 import { isString, binaryTweenPipeAtom, makeGeneralEventHandler, TERMINATOR } from 'MobiusUtils'
 import { makeInstantComponent, makeVerticalDockE } from 'MobiusGUI'
 
-import { appRouteDriverInstance, appNameRD } from 'FreeServices/app-route'
+import { appRouteDriverInstance, appNameRD } from 'Interfaces/services/app-route'
 
 import type { Terminator } from 'MobiusUtils'
 import type { DockItem } from 'MobiusGUI'
