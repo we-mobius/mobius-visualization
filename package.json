@@ -1,0 +1,201 @@
+{
+  "name": "web-template",
+  "version": "0.1.0",
+  "description": "📋 Template for mobius flavor web project.",
+  "type": "module",
+  "typings": "./typings/main.d.ts",
+  "types": "./typings/main.d.ts",
+  "main": "./release/modules/cjs/main.cjs",
+  "module": "./release/modules/esm/main.js",
+  "exports": {
+    ".": {
+      "require": "./release/modules/cjs/main.cjs",
+      "import": "./release/modules/esm/main.js",
+      "node": "./release/modules/esm/main.js",
+      "default": "./release/modules/esm/main.js"
+    },
+    "./es": "./release/modules/es/main.js",
+    "./es/*": "./release/modules/es/*",
+    "./es-js/*": "./release/modules/es/*.js",
+    "./ts": "./src/main.ts",
+    "./ts/*": "./src/ts/*.ts",
+    "./ts-js/*": "./src/ts/*.js",
+    "./esm": "./release/modules/esm/main.js",
+    "./umd": {
+      "require": "./release/modules/umd/main.cjs",
+      "import": "./release/modules/umd/main.js",
+      "node": "./release/modules/umd/main.js",
+      "default": "./release/modules/umd/main.js"
+    },
+    "./cjs": "./release/modules/cjs/main.cjs",
+    "./src/*": "./src/*",
+    "./src-ts/*": "./src/*.ts",
+    "./src-js/*": "./src/*.js",
+    "./statics/*": "./statics/*",
+    "./release/*": "./release/*",
+    "./release-js/*": "./release/*.js",
+    "./release-cjs/*": "./release/*.cjs",
+    "./esm/*": "./release/modules/esm/*",
+    "./cjs/*": "./release/modules/cjs/*",
+    "./umd/*": "./release/modules/umd/*",
+    "./css": "./src/statics/styles/release.css",
+    "./css-base": "./src/statics/styles/base.release.css",
+    "./css-addon": "./src/statics/styles/addon.release.css",
+    "./css-main": "./src/statics/styles/mobius.release.css",
+    "./css/*": "./src/statics/styles/*.css",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "es": [
+        "./release/modules/es/main.d.ts"
+      ],
+      "es/*": [
+        "./release/modules/es/*"
+      ],
+      "es-js/*": [
+        "./release/modules/es/*"
+      ],
+      "ts": [
+        "./src/main.ts"
+      ],
+      "ts/*": [
+        "./src/ts/*"
+      ],
+      "ts-js/*": [
+        "./src/ts/*"
+      ],
+      "esm": [
+        "./typings/main.d.ts"
+      ],
+      "umd": [
+        "./typings/main.d.ts"
+      ],
+      "cjs": [
+        "./typings/main.d.ts"
+      ],
+      "*": [
+        "./typings/main.d.ts"
+      ]
+    }
+  },
+  "keywords": [
+    "mobius",
+    "web"
+  ],
+  "directories": {
+    "doc": "./docs",
+    "bin": "./bin"
+  },
+  "scripts": {
+    "cz-commit": "npm run lint && npx git-cz",
+    "lint": "npx eslint ./src",
+    "lint:fix": "npx eslint ./src --fix",
+    "dev": "node ./scripts/dev",
+    "build": "node ./scripts/build",
+    "dist": "node ./scripts/dist",
+    "serve:build": "npx live-server ./build --port=0624",
+    "serve:dist": "npx live-server ./dist --port=0624",
+    "expose": "npx ngrok http 624",
+    "bundle": "node ./scripts/bundle",
+    "doc": "node ./scripts/document",
+    "beforepublish": "npm run build && npm run dist && npm run bundle && npm run doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-mobius/web-template.git"
+  },
+  "author": {
+    "name": "kongxiangyan",
+    "email": "kcigaret@outlook.com",
+    "url": "https://www.cigaret.world/"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/we-mobius/web-template/issues"
+  },
+  "homepage": "https://github.com/we-mobius/web-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@commitlint/cli": "15.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "autoprefixer": "^10.0.0",
+    "babel-loader": "^8.1.0",
+    "chalk": "^5.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commitizen": "^4.1.2",
+    "commitlint-config-cz": "^0.13.1",
+    "copy-webpack-plugin": "10.2",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "cz-customizable": "^6.2.1",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "file-loader": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.5.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mini-css-extract-plugin": "^1.0.0",
+    "mini-svg-data-uri": "^1.2.3",
+    "postcss": "^8.0.0",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-csso": "^5.0.0",
+    "postcss-extend-rule": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^3.0.0",
+    "postcss-loader": "^4.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "standard": "^14.3.4",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.0",
+    "ts-loader": "^9.2.5",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^4.7.0",
+    "webpack-merge": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "jsdelivr": "./release/modules/umd/main.js",
+  "files": [
+    "/release/*",
+    "/dist/*",
+    "/build/*",
+    "/src/*",
+    "/public/*",
+    "/docs/*",
+    "/bin/*",
+    "/typings/*"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "./statics/**"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+  }
+}
